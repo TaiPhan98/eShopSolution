@@ -12,7 +12,7 @@ namespace eShopSolution.Application.Catalog.Products
     {   // định nghĩa các phương thức
         Task<int> Create(ProductCreateRequest request);
 
-        Task<int> Update(ProductUpdateRequets request);
+        Task<int> Update(ProductUpdateRequest request);
 
         Task<bool> UpdatePrice(int productId, decimal newPrice);
 
@@ -20,8 +20,6 @@ namespace eShopSolution.Application.Catalog.Products
         Task AddViewcount(int prodductId);
 
         Task<int> Delete(int productId);
-
-        Task<List<ProductViewModel>> Getall();
-        Task<PagedViewModel<ProductViewModel>> GetAllPaging(GetProductPagingRequest request);
+        Task<PagedResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request);
     }
 }

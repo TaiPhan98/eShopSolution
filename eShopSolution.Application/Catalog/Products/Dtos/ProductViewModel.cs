@@ -5,7 +5,20 @@ using System.Text;
 namespace eShopSolution.Application.Catalog.Products.Dtos
 {
     public class ProductViewModel
-    {
-        // lấy ra danh sách thuộc tính mà muốn hiển thị 
+    { // lay danh sach muốn hiển thị
+        public int Id { set; get; }
+        public decimal Price { set; get; }
+        public decimal OriginalPrice { set; get; }
+        public int Stock { set; get; }
+        public int ViewCount { set; get; }
+        public DateTime DateCreated { set; get; }
+        public string Name { set; get; }
+        public string Description { set; get; }
+        public string Details { set; get; }
+        public string SeoDescription { set; get; }
+        public string SeoTitle { set; get; }
+
+        public string SeoAlias { get; set; }
+        public string LanguageId { set; get; }
     }
 }

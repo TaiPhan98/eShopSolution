@@ -4,7 +4,7 @@ using System.Text;
 
 namespace eShopSolution.Application.Catalog.Products.Dtos.Manage
 {
-    public class ProductUpdateRequets
+    public class ProductUpdateRequest
     {
         public int Id { set; get; }
         public string Name { set; get; }
